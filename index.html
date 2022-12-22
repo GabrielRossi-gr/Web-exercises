@@ -122,12 +122,124 @@ Descrição
 
 
 
+<!--
 
-Conhecendo a tag âncora
+    Conhecendo a tag âncora
+    Descrição
+    São os famosos hyperlinks, e a tag usada para se criar um é a <a href=" ></a>, responsável por ligar várias páginas.
+    
+    Em sua anatomia ele recebe atributos globais (title, id ,class,...) e o mais importante href, a referência, podendo ser url completa, fragmento, email, telefone e mais diversos outros. há também o atributo de download, que é download="", usado junto do href="",por exemplo, se você colocar o link de uma imagem no href="" com o atributo de download, a imagem será baixada ao invés de irmos até a página e se colocarmos um valor no atributo de download, ele irá dizer como você vai salvar o arquivo.
+    
+    Por fim temos o atributo target="", que irá dizer qual o alvo do nosso disparo, ou seja, se não tivermos o target, quando clicarmos no link, ele vai pegar o mesmo alvo, a mesma página e apenas vai trocar o conteúdo, mas se usarmos o atributo, por exemplo target="_blank", ele vai abrir uma página com o conteúdo.
+
+-->
+Utilizando a tag âncora
 Descrição
-São os famosos hyperlinks, e a tag usada para se criar um é a <a href=" ></a>, responsável por ligar várias páginas.
+Nesta aula estaremos aprendendo um pouco mais sobre a tag âncora utilizando ela.
 
-Em sua anatomia ele recebe atributos globais (title, id ,class,...) e o mais importante href, a referência, podendo ser url completa, fragmento, email, telefone e mais diversos outros. há também o atributo de download, que é download="", usado junto do href="",por exemplo, se você colocar o link de uma imagem no href="" com o atributo de download, a imagem será baixada ao invés de irmos até a página e se colocarmos um valor no atributo de download, ele irá dizer como você vai salvar o arquivo.
+<p>Saiba mais</p>
+<ul>
+    <li><a href="#about">Sobre mim</a></li>
+    <li><a href="#history">História</a></li>
+    <li><a href="#works">Trabalhos</a></li>
+</ul>
 
-Por fim temos o atributo target="", que irá dizer qual o alvo do nosso disparo, ou seja, se não tivermos o target, quando clicarmos no link, ele vai pegar o mesmo alvo, a mesma página e apenas vai trocar o conteúdo, mas se usarmos o atributo, por exemplo target="_blank", ele vai abrir uma página com o conteúdo.
+<h1 id="about">Sobre mim</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius harum quos similique. Debitis, itaque sit veniam quam recusandae eligendi aspernatur neque deleniti adipisci provident excepturi voluptate, amet corporis laborum.
+    
 
+Conteúdos dentro de elemento a
+Descrição
+Estaremos vendo o que podemos colocar dentro do conteúdo do elemento <a></a>.
+
+Qualquer coisa pode ser colocado, até mesmo outras tags, e mais de uma.
+
+ <a href="http://google.com" title="Ir para google">
+    <h1>Google</h1>
+    <p>Claro que posso</p>
+    <img src="https://source.unsplash.com/random" alt="">
+</a>
+
+
+Organizando Tabelas
+Descrição
+Agora vamos dar uma melhor organizada na nossa tabela.
+
+Colocaremos o nosso cabeçalho, na tag <thead></thead> e o nosso corpo no <tbody></tbody> e criaremos o rodapé usando <tfoot></tfoot> colocando os dados total.
+
+Por fim poderemos colocar a tag <caption></caption> para descrever sobre o que a nossa tabela é, ficando mais ou menos assim:
+
+<table>
+
+    <caption>Pessoas por idade</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mayk</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 Pessoas</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+
+
+
+
+Melhorando o aspecto com colgroup
+Descrição
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+ 
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: blue;">
+        <col span="2" style="background-color: red">
+    </colgroup>
+    
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Afonso Pena</th>
+            <th colspan="2" scope="colgroup">Antônia Pereira</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
