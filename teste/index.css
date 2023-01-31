@@ -1,23 +1,33 @@
-* {
-    margin: 0px;
+*{
+    margin: 0;
 }
-
-p {
-    margin: 15px 10px;
-}
-
-div {
-    margin: 1px 2.5px;
-    height: 80px;
-    width: 100px;
-    border-radius: 13px;
-    border: 1px solid blue;
+.box1 {
     
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 119, 119);
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
-/*
-padding: 40px 0px 20px 5px;
-margin: 5px 2.5px 5px 2.5px; 
+.box2 {
+    
+    width: 200px;
+    height: 200px;
+    background-color: rgb(78, 208, 255);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+}
+.box3 {
+    
+    width: 200px;
+    height: 200px;
+    background-color:  rgb(126, 255, 165);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
 
-
-*/
 
