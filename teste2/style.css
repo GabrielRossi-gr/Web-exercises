@@ -1,0 +1,20 @@
+
+*{
+    margin: 0;
+}
+
+
+.container{
+    display: flex;
+    justify-content: right;
+}
+.teste{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+.teste1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
