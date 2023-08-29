@@ -22,7 +22,7 @@ delete alunos[1];
 
 
 
-//exemplo de arrey de notas
+//exemplo de array de notas
 const notas = []
 notas.push(10);
 notas.push(3);
